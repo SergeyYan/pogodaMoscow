@@ -33,7 +33,11 @@ public class Parser {
         for (int i = 0; i < iterationCount; i++) {
             Element valuesLine = values.get(index+i);
             for (Element tbody : valuesLine.select("tr")) {
-                System.out.print(tbody.text() + "\n");
+                String[] wordPrint = tbody.text().trim().split("\\s+");
+                for (int j = 0; j < wordPrint.length; j++) {
+                        System.out.print(wordPrint[j] + "    ");
+                }
+                System.out.println();
             }
             System.out.println();
         }
