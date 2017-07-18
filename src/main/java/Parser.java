@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 
 /**
  * Created by Blago on 05.07.2017.
+ * Version PogodaMoscow v 0.02
  */
 public class Parser {
     private static Document getPage() throws IOException {
